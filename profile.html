@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/css/styles.css" rel="stylesheet">
+    <title>Profile page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light-brand-color mb-5">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">Course Assignment</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary" href="login.html">Log in</a>
+                    <a class="btn btn-secondary m-2">Sign up</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 mb-5">
+                    <div class="card bg-info">
+                        <img src="images/profile-image-icon.webp" class="card-img-top" alt="Profile image">
+                        <div class="card-body text-align-center">
+                            <h6>Name</h6>
+                            <h3 class="card-title">John Doe</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="card mb-5 bg-info">
+                        <div class="card-header">
+                          Contacts
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Jane Doe</li>
+                          <li class="list-group-item">Johnny Doe</li>
+                          <li class="list-group-item">Jenny Doe</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="row">
+                <div class="col m-2 p-4 bg-info rounded-3">
+                    <h2>Post your thoughts!</h2>
+                    <form class="mb-5">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="What's on your mind?" aria-label="What's on your mind?" aria-describedby="Create-post-button">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Post</button>
+                        </div>
+                    </form>
+                    <h2>Previous posts</h2>
+                    <hr class="my-4">
+                    <article class="blog-post">
+                        <h3 class="blog-post-title">A blog post</h3>
+                        <p class="blog-post-meta">October 27, 2022 by <a href="#">John Doe</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis venenatis, ullamcorper orci ut, convallis lacus. Praesent vitae lectus tortor. Ut non tortor viverra ipsum porttitor convallis vitae eget neque. Mauris volutpat quam tellus, vitae auctor dolor luctus a. Aliquam nec est vel lectus hendrerit laoreet vel eu turpis.</p>
+                      </article>
+                      <article class="blog-post">
+                        <h3 class="blog-post-title">A different blog post</h3>
+                        <p class="blog-post-meta">October 1, 2022 by <a href="#">John Doe</a></p>
+                        <p>Maecenas dignissim suscipit lobortis. Suspendisse posuere bibendum neque, vel lobortis augue aliquam nec. Cras efficitur libero facilisis efficitur vehicula. Sed ac condimentum eros. Sed sodales nec ante vel elementum. Aenean sed eros est. Etiam varius pretium risus, eu vestibulum libero congue nec. Pellentesque lacinia arcu a nisl varius lobortis. Donec tempor, velit non efficitur sagittis, ex eros iaculis nisl, vel molestie metus nibh in lacus. Curabitur risus mi, imperdiet a consequat a, interdum at enim. Cras pulvinar lectus tellus. </p>
+                      </article>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
