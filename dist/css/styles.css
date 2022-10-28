@@ -1993,7 +1993,7 @@ progress {
   color: #212529;
   background-color: #F9ED69;
   background-clip: padding-box;
-  border: 1px solid #6A2C70;
+  border: 1px solid #ced4da;
   appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2139,7 +2139,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: 1px solid #6A2C70;
+  border: 1px solid #ced4da;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -2493,7 +2493,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #6A2C70;
+  border: 1px solid #ced4da;
   border-radius: 0.375rem;
 }
 
