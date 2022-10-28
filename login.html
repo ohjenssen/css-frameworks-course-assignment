@@ -37,27 +37,31 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <form class="p-3 p-md-5 rounded-3 bg-info" action="profile.html">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                    <form action="/profile.html" class="was-validated p-3 p-md-5 rounded-3 bg-info">
+                        <h1>Log in</h1>
+                        <div class="mb-3 mt-3">
+                            <label for="uname" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
                         </div>
-                        <div class="checkbox mb-3">
-                            <label>
-                            <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                        <hr class="my-4">
-                    </form>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form> 
                 </div>
             </div>
         </div>
     </main>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="profile.html" class="nav-link px-2 text-muted">Profile</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+      </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
