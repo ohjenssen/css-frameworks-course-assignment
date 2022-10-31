@@ -10773,6 +10773,7 @@ textarea.form-control-lg {
 }
 :root {
   --bs-body-font-family: Futura, open-sans, sans-serif;
+  --bs-body-font-weight: 200;
 }
 
 /*# sourceMappingURL=styles.css.map */
