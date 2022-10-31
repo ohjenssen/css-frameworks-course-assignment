@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.post-profile-image {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
