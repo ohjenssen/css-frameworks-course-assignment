@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="dist/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <title>Profile page</title>
+</head>
+<body>
+    <div class="container profile-page">
+       <!-- NAVIGATION -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/squareEyesLogo-phone.png" style="width:200px;">
+                    </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="profile.html">Profile</a>
+                                </li>
+                            </ul>
+                            <div class="btn-container">
+                                <a href="login.html" class="btn btn-primary" type="submit">Log in</a>
+                                <a class="btn btn-secondary" type="submit">Sign up</a>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row mb-3">
+                <!-- PROFILE DETAILS -->
+                <div class="col-sm-6 mb-3">
+                    <div class="card">
+                        <h5 class="card-title">John Doe</h5>
+                        <img src="images/profile-image-icon.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Details about yourself. Tell a fun fact about yourself or maybe a little story. Throw in a joke too.</p>
+                          <a href="#" class="btn btn-primary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTACT LIST -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                          <h5>Contacts</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Jane Doe</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Cersei Lannister</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Anakin Skywalker</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Ned Stark</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Lara Croft</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Sheldon Cooper</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Monica Geller</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Jon Snow</li>
+                          <li class="list-group-item"><img src="images/profile-image-icon.webp" class="contacts-profile-image">Leia Organa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- CREATE POST -->
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="create-post">
+                        <div class="create-post-top pt-2">
+                          <h4>Create a post</h2>
+                        </div>
+                        <div class="create-post-body rounded-0">
+                          <form>
+                            <div class="input-group">
+                              <textarea class="form-control rounded-0 border-0" rows="3" placeholder="What's on your mind?" aria-label="What's on your mind?" aria-describedby="Create-post-button"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="create-post-bottom d-flex">
+                          <button class="btn btn-primary rounded-0" type="button" id="button-addon1">Add image</button>
+                          <button class="btn btn-primary rounded-0" type="button" id="button-addon2">Post</button>
+                        </div>             
+                    </div>
+                </div>
+            </div>
+            <!-- USER POSTS  -->
+            <div class="row">
+                <div class="col-12">
+                  <div class="post-container">
+                    <div class="title-container">
+                        <h3>Your posts</h2>
+                        <hr>
+                    </div>
+                    <!-- POST EXAMPLES -->
+                    <article class="blog-post">
+                      <h4 class="blog-post-title">A post</h3>
+                      <p class="blog-post-meta">October 27, 2022 by
+                          <a href="#">John Doe</a>
+                          <img src="images/profile-image-icon.webp" class="post-profile-image">
+                      </p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis venenatis, ullamcorper orci ut, convallis lacus. Praesent vitae lectus tortor. Ut non tortor viverra ipsum porttitor convallis vitae eget neque. Mauris volutpat quam tellus, vitae auctor dolor luctus a. Aliquam nec est vel lectus hendrerit laoreet vel eu turpis.</p>
+                    </article>
+                    <article class="blog-post mt-2">
+                        <h4 class="blog-post-title">A post</h3>
+                        <p class="blog-post-meta">October 27, 2022 by
+                            <a href="#">John Doe</a>
+                            <img src="images/profile-image-icon.webp" class="post-profile-image">
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis venenatis, ullamcorper orci ut, convallis lacus. Praesent vitae lectus tortor. Ut non tortor viverra ipsum porttitor convallis vitae eget neque. Mauris volutpat quam tellus, vitae auctor dolor luctus a. Aliquam nec est vel lectus hendrerit laoreet vel eu turpis.</p>
+                    </article>
+                    </div> 
+                  </div>
+                </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 m-4 border-top border-secondary">
+            <div class="col d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="images/squareEyesLogo-phone.png"
+                    style="width:200px;">
+                </a>
+                <span class="mb-3 mb-md-0 text-white">© 2022 Company, Inc</span>
+            </div>
+            
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="bi bi-facebook" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="bi bi-twitter" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="bi bi-instagram" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
