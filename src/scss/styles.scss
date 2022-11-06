@@ -1,12 +1,17 @@
-// Custom scss
-@import "partials/profile-image";
-@import "partials/variables";
+//Variable overrides
+@import "variables";
 
-
-//Original files
+//Bootstrap files
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-// Font
+// Custom components
+@import "layout";
+@import "navbar";
+@import "article";
+@import "create-post";
+@import "card";
+
+// Custom styles
 :root {
     --bs-body-font-family: Futura, open-sans, sans-serif;
     --bs-body-font-weight: 200;

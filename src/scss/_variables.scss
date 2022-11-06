@@ -1,0 +1,24 @@
+$neon-red: #ff124f;
+$neon-pink: #ff00a0;
+$neon-light-pink: #fe75fe;
+$neon-purple: #7a04eb;
+$neon-dark-purple: #120458;
+
+// Color palette
+$primary: $neon-red;
+$secondary: $neon-dark-purple;
+
+// Card
+$card-bg: $secondary;
+
+// Contact list
+$list-group-bg: $neon-purple;
+$list-group-border-color: $secondary;
+$list-group-color: white;
+
+// Form
+$input-color: black;
+$input-btn-focus-color: black;
+
+$body-color: white;
+$border-color: $primary;
